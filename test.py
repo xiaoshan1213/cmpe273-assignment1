@@ -14,7 +14,7 @@ p = re.compile(r'\/+')
 out = p.split(args.site)
 len = len(out)
 
-g = Github("xiaoshan1213", "github901213")
+g = Github("username", "password")
 repo = g.get_user().get_repo(out[len-1])
 
 @app.route("/")
